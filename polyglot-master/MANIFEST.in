@@ -1,0 +1,10 @@
+include *.rst
+include notebooks/*.ipynb
+include *.txt
+include Makefile
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat
